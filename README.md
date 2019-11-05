@@ -1,6 +1,6 @@
 # bitmask in dart
 
-A simple approach to 32-bit bitmasks. Used to send arrays of bools. MongoDB is using bitmasks as its flags paramenters.
+A simple approach to 32-bit bitmasks. Used to send arrays of bools. MongoDB is using bitmasks as its flags parameters.
 
 ## Getting Started
 
