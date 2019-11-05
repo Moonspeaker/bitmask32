@@ -1,0 +1,11 @@
+name: bitmask32
+description: A simple approach to 32-bit bitmasks. Used to send arrays of bools. MongoDB is using bitmasks as its flags paramenters.
+version: 1.0.0
+author: Subbotin Aleksei <darkandjeweled@gmail.com>
+homepage: https://github.com/Moonspeaker/bitmask32
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dev_dependencies:
+  test: ^1.9.3
