@@ -9,8 +9,8 @@ int encodeBitMask(final List<int> positions){
   return value;
 }
 
-List<int> decodeBitMask(int bitMask){
-  final List<int> bits = List();
+List<int> decodeBitMask(int bitMask){ //int is mutable
+  final List<int> bits = List(); //second generic type annotation would be redundant
   for(int i = 31; i >= 0; i--){
     final int power = _oneBit << i;
     if(bitMask >= power){
