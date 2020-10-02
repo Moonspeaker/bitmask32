@@ -1,4 +1,4 @@
-## [2.0.2] - Refactor
+## [2.0.3] - Refactor
 
 Introduced readability, usability changes. Bitmask32 is now a class.
 

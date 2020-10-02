@@ -13,21 +13,11 @@ class Bitmask32{
   void setFlag(final int index, final bool value) =>
       _bits[index] = value;
 
-  bool flagAt(final int index) =>
+  bool getFlag(final int index) =>
       _bits[index];
 
   void setPositions(final List<int> positions) =>
       _fillPositions(_bits, positions);
-
-  int get toInt {
-    int value = 0;
-    for(int i=0; i<_length; i++){
-      if(_bits[i]){
-        value = value |= (_oneBit << i);
-      }
-    }
-    return value;
-  }
 
   List<int> get positions {
     final List<int> positionsWhereTrue = List();
@@ -37,6 +27,16 @@ class Bitmask32{
       }
     }
     return positionsWhereTrue;
+  }
+
+  int get toInt {
+    int value = 0;
+    for(int i=0; i<_length; i++){
+      if(_bits[i]){
+        value = value |= (_oneBit << i);
+      }
+    }
+    return value;
   }
 
   Bitmask32._(final List<bool> bits) :
