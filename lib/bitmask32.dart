@@ -10,7 +10,7 @@ class Bitmask32{
 
   final List<bool> _bits;
 
-  void setFlag(final int index, final bool value) =>
+  void setFlag(final int index, [final bool value = true]) =>
       _bits[index] = value;
 
   bool getFlag(final int index) =>
