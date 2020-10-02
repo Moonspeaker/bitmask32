@@ -1,6 +1,5 @@
-## [1.0.3] - improved comments
+## [2.0.2] - Refactor
 
-## [1.0.2] - package info maintaining
+Introduced readability, usability changes. Bitmask32 is now a class.
 
-## [1.0.0] - Initial release
-
+Changes in code are required. See library provided example.
